@@ -14,3 +14,8 @@ type: Switch
 standard: eu
 ---
 This one came with new firmware, so tuya-convert didn't work. But it's quite easy to disassemble -- the top PCB holds on 2-sided duct foram and pin header. The pins on top PCB have VCC 3.3V(lowest) and GND(one above VCC), those can be used to power it up directly from RPi. And you can also flash it with RPi following this guide: https://siytek.com/how-to-flash-esp-devices-with-tasmota-using-raspberry-pi/
+
+date_added: 2021-12-13
+The current AVATTO 3-way v4.1 switches are no longer with a TYWE3S module but with a WB3S module. However, it is possible to exchange the WB3S module for an ESP2866 12F. However, this procedure is time-consuming and some modifications on the board need to be made. 
+The old template no longer works either. here the working template for v4.1:
+{"NAME":"AVATTO 3 Gang v4.1","GPIO":[0,226,544,34,32,33,0,0,288,224,289,225,290,0],"FLAG":0,"BASE":18}
